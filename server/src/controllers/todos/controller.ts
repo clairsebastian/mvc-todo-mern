@@ -1,5 +1,5 @@
 import { Response, Request } from 'express'
-import { ITodo } from './../../types/todo'
+import { ITodo } from '../../types/todo'
 import Todo from '../../models/todo'
 
 const getTodos = async (req: Request, res: Response): Promise<void> => {
@@ -13,8 +13,9 @@ const getTodos = async (req: Request, res: Response): Promise<void> => {
 
 const addTodo = async (req: Request, res: Response): Promise<void> => {
     try {
+        console.log("Reached ADD TODO")
         const body = req.body as Pick<ITodo, 'name' | 'description' | 'status'>
-
+       
         const todo: ITodo = new Todo({
             name: body.name,
             description: body.description,

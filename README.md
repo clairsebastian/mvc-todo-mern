@@ -4,7 +4,6 @@ In this tutorial, we will be using TypeScript on both sides (server and client) 
 
 So, let's start by planning the API.
 
-[Read the article](https://www.ibrahima-ndaw.com/fr/blog/advanced-typescript-cheat-sheet/)
 
 - [API with NodeJS, Express, MongoDB and TypeScript](#api-with-nodejs-express-mongodb-and-typescript)
   - [Setting up](#setting-up)

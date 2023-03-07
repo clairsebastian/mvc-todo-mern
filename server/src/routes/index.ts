@@ -1,7 +1,7 @@
 import { Router } from 'express'
-import { getTodos, addTodo, updateTodo, deleteTodo } from '../controllers/todos'
+import { getTodos, addTodo, updateTodo, deleteTodo } from '../controllers/todos/controller'
  
-const router: Router = Router()
+const router: Router = Router({strict:false})
 
 router.get('/todos', getTodos)
 
