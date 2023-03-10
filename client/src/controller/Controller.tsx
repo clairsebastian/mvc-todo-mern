@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import TodoItem from './components/TodoItem'
-import AddTodo from './components/AddTodo'
-import { getTodos, addTodo, updateTodo, deleteTodo } from './API'
+import TodoItem from '../view/TodoItem'
+import AddTodo from '../view/AddTodo'
+import { getTodos, addTodo, updateTodo, deleteTodo } from '../service/API'
 
 const App: React.FC = () => {
   const [todos, setTodos] = useState<ITodo[]>([])
